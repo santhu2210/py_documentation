@@ -1,0 +1,8 @@
+Flask==1.1.2
+Flask-Cors==3.0.10
+Flask-RESTful==0.3.8
+Flask-JWT==0.3.2 
+PyJWT==1.4.2
+Sphinx
+rinohtype
+sphinxcontrib-napoleon

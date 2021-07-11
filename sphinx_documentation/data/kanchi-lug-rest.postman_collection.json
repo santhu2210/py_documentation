@@ -1,0 +1,121 @@
+{
+	"variables": [],
+	"info": {
+		"name": "kanchi-lug-rest",
+		"_postman_id": "79265127-af4f-9e78-ee54-4990561f0d98",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "rest-api-endpoints",
+			"description": "",
+			"item": [
+				{
+					"name": "http://localhost:5001/auth",
+					"request": {
+						"url": "http://localhost:5001/auth",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"admin\",\r\n    \"password\": \"admin@123\"\r\n}"
+						},
+						"description": "jwt token getting"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:5001/dashboard",
+					"request": {
+						"url": "http://localhost:5001/dashboard",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjU5OTE2MzEsImlhdCI6MTYyNTk5MTMzMSwibmJmIjoxNjI1OTkxMzMxLCJpZGVudGl0eSI6MX0.UYBZULZI4v6GxrySJBpZ8O7vnKxH_9h_NBDtgNHRqMs",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:5001/members/27",
+					"request": {
+						"url": "http://localhost:5001/members/27",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjU5OTA5MzQsImlhdCI6MTYyNTk5MDYzNCwibmJmIjoxNjI1OTkwNjM0LCJpZGVudGl0eSI6MX0.Ub5DRlQSFhCr1pchhso7OZTjnTXMp4SaXKOo0Jq4fDw",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:5001/members",
+					"request": {
+						"url": "http://localhost:5001/members",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjU5OTA5MzQsImlhdCI6MTYyNTk5MDYzNCwibmJmIjoxNjI1OTkwNjM0LCJpZGVudGl0eSI6MX0.Ub5DRlQSFhCr1pchhso7OZTjnTXMp4SaXKOo0Jq4fDw",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"id\": 64,\n            \"name\": \"vickram\",\n            \"location\": \"chennai\",\n            \"age\": 34\n        }"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:5001/members",
+					"request": {
+						"url": "http://localhost:5001/members",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjU5OTA5MzQsImlhdCI6MTYyNTk5MDYzNCwibmJmIjoxNjI1OTkwNjM0LCJpZGVudGl0eSI6MX0.Ub5DRlQSFhCr1pchhso7OZTjnTXMp4SaXKOo0Jq4fDw",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"id\": 64,\n            \"name\": \"vickram\",\n            \"location\": \"chennai\",\n            \"age\": 34\n        }"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
